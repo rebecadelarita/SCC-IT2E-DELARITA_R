@@ -45,23 +45,6 @@ public class Rebeca {
          System.out.println("change:"+change+".00"); 
       
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-       
-       
-        
-     
-   
-     
-     
     }
         
         
