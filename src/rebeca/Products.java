@@ -23,3 +23,4 @@ public class Products {
         System.out.println("   "+this.pid+"    "+this.pname+"    "+this.price+"    "+this.stocks+"     "+this.sold+"    "+profit+"     "+tep+"   "+status);
     }
 }
+

@@ -1,7 +1,8 @@
 package rebeca;
 
 public class Grades {
-    int sid;
+    
+}int sid;
     String sname;
     double p, m, pf, f, ave;
     
@@ -21,4 +22,3 @@ public class Grades {
                 
         System.out.println(+this.sid+"   "+this.sname+"    "+this.p+"    "+this.m+"    "+this.pf+"   "+this.f+"    "+ave+"    "+remarks);
     }
-}
