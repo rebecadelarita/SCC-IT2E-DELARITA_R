@@ -1,26 +1,28 @@
 package rebeca;
-    
+
 public class Products {
-     int pid;
+    int pid, pstocks, psold;
     String pname;
-    double price;
-    int stocks, sold;
+    double pprice, profit, tep;
     
-    public void addProducts(int id,String name, double pr, int stcks, int sld){
+    public Products(int id, String name, double price, int stocks, int sold){
         this.pid = id;
         this.pname = name;
-        this.price = pr;
-        this.stocks = stcks;
-        this.sold = sld;
+        this.pprice = price;
+        this.pstocks = stocks;
+        this.psold = sold;
+    }
+
+    Products() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
-    public void getProducts(){
-        double profit = this.price*this.sold;
-        double tep = this.stocks*this.price;
+    public void viewProducts(){
+        this.profit = this.psold * this.pprice;
+        this.tep = (this.pstocks + this.psold) * this.pprice;
+        String status = (this.pstocks > 0) ? "Available" : "Out-of-Stock";
         
-        String status = (this.stocks > 0) ? "Available" : "Out-of-Stocks";
-        
-        System.out.println("   "+this.pid+"    "+this.pname+"    "+this.price+"    "+this.stocks+"     "+this.sold+"    "+profit+"     "+tep+"   "+status);
+        System.out.printf("%-10d %-10s %-10.2f %-10d %-10d %-10.2f %-10.2f %-10s\n", 
+                this.pid, this.pname, this.pprice, this.pstocks, this.psold, this.profit, this.tep, status);
     }
 }
-

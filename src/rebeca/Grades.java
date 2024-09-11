@@ -14,7 +14,7 @@ public class Grades {
         this.f = f;
     }
     
-    public void getGrades(){
+    public void viewGrades(){
         
         ave = (this.p+this.m+this.pf+this.f)/4;
         String remarks = (ave > 3.0) ? "failed" : "Passed";

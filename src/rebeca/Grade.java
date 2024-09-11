@@ -35,7 +35,7 @@ public class Grade {
         for(int i = 0; i < snum; i++){
             gr[i].ave = (gr[i].p+gr[i].m+gr[i].pf+gr[i].f)/4;
             TCA = TCA + gr[i].ave;
-            gr[i].getGrades();
+            gr[i].viewGrades();
             
             if(gr[i].ave > 3.0){
                 passed++;
